@@ -3,7 +3,9 @@
     position: absolute;
     bottom: 20px;
     right: 4px;
-    display: block; }
+    display: block;
+    font-size: 0.8em;
+    padding-top: 5% !important; }
 
   .food-item {
     padding-right: 8px;
@@ -11,27 +13,28 @@
 
   .logo-mobile a {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 20px;
-    padding: 0;
+    font-size: 7vw;
+    padding: 0px;
     text-align: center;
-    text-transform: uppercase;
     text-rendering: optimizeLegibility;
     color: #3E3232;
     letter-spacing: .15em;
-    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; } }
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+
+  .menu-type {
+    margin-top: -3vh !important; } }
 .logo {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 40px;
   padding: 10px 10px;
   text-align: center;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   color: #3E3232;
   letter-spacing: .15em;
   text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
 
 .logo-mobile {
-  height: 100%; }
+  height: 6vh; }
 
 .logo-mobile a:hover, .logo:hover {
   color: #6c7ae0;
