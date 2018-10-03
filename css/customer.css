@@ -1,0 +1,79 @@
+@media screen and (max-width: 1000px) {
+  .food-image a {
+    position: absolute;
+    bottom: 20px;
+    right: 4px;
+    display: block; } }
+.logo {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 40px;
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #3E3232;
+  letter-spacing: .15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+
+.logo-mobile a {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 25px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #3E3232;
+  letter-spacing: .15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+
+.logo-mobile {
+  height: 100%; }
+
+.logo-mobile a:hover, .logo:hover {
+  color: #6c7ae0;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #4D80E7, -3px 6px 1px #787777,  -4px 8px 1px #4E97C5, -5px 10px 1px #6D97D1,  -6px 12px 1px #686FCC, -7px 14px 1px #6c7ae0; }
+
+.wrap-menu-desktop, .wrap-header-mobile {
+  top: -8px !important;
+  background: #e6e6e6; }
+
+.fix-menu-desktop .wrap-menu-desktop {
+  top: 0px !important; }
+
+.menu-type {
+  margin-top: 50px; }
+
+.food-image img {
+  min-height: 170px;
+  width: 100%;
+  cursor: pointer; }
+.food-image a {
+  padding-top: 1%;
+  text-align: center;
+  width: 90%;
+  height: 30px; }
+.food-image a:hover {
+  border-color: #222;
+  background-color: #ddd;
+  color: black;
+  font-weight: bold; }
+.food-image i.cart-desktop {
+  padding-right: 5px; }
+
+.block2 {
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19); }
+
+.food-content div {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center; }
+.food-content a {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+/*# sourceMappingURL=customer.css.map */

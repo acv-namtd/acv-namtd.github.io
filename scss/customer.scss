@@ -1,0 +1,97 @@
+//variable
+$im : !important;
+//font logo
+@mixin font-logo($font_size,$font_padding){
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: $font_size;
+	padding: $font_padding;
+  	text-align: center;
+  	text-transform: uppercase;
+  	text-rendering: optimizeLegibility;
+	color: #3E3232;
+	letter-spacing: .15em;
+	text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, 
+	-3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d,
+	-6px 12px 1px #828181, -7px 14px 1px #868585;
+}
+@mixin font-logo-hover(){
+	color: #6c7ae0;
+	text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272,
+	-2px 4px 1px #4D80E7, -3px 6px 1px #787777, 
+	-4px 8px 1px #4E97C5, -5px 10px 1px #6D97D1, 
+	-6px 12px 1px #686FCC, -7px 14px 1px #6c7ae0;
+}
+//display cart when display lower 1000px
+@media screen and (max-width: 1000px){
+	.food-image a{
+		position: absolute;
+		bottom: 20px;
+		right: 4px;
+		display: block;
+	}
+}
+//custom logo desktop and mobile
+.logo{
+	@include font-logo(40px,10px 10px);
+}
+.logo-mobile a{
+	@include font-logo(25px,0);
+}
+.logo-mobile{
+	height: 100%;
+}
+.logo-mobile a:hover,.logo:hover{
+	@include font-logo-hover();
+}
+.wrap-menu-desktop,.wrap-header-mobile{
+	top:-8px !important;
+	background: #e6e6e6;
+}
+.fix-menu-desktop .wrap-menu-desktop{
+	top: 0px !important;
+}
+.menu-type{
+	margin-top: 50px;
+}
+//custom image
+.food-image{
+	img{
+		min-height: 170px;
+		width: 100%;
+		cursor: pointer;
+	}
+	a{
+		padding-top: 1%;
+		text-align: center;
+		width:  90%;
+		height: 30px;
+	}
+	a:hover{
+		border-color: #222;
+		background-color: #ddd;
+		color: black;
+		font-weight: bold;
+	}
+	i.cart-desktop{
+		padding-right: 5px;
+	}
+}
+.block2{
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 4px 15px 0 rgba(0,0,0,.19);
+}
+.food-content{
+	div{
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		align-items : center;
+	}
+	a{
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis; 
+	}
+}
