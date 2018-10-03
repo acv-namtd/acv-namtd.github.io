@@ -14,13 +14,13 @@
 @media only screen and (max-width: 600px) {
   .logo-mobile a {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 1.5em;
+    font-size: 6vw;
     padding: 0px;
     text-align: center;
     text-rendering: optimizeLegibility;
-    color: #3E3232;
+    color: #cc633b;
     letter-spacing: .15em;
-    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+    text-shadow: 1px -1px 0 #d86565, -1px 2px 1px #b14a4a, -2px 4px 1px #c38152fa,  -3px 6px 1px #e2bf3e, -4px 8px 1px #cc905deb; }
 
   .menu-type {
     margin-top: -3vh !important; } }
@@ -32,9 +32,9 @@
     padding: 0px;
     text-align: center;
     text-rendering: optimizeLegibility;
-    color: #3E3232;
+    color: #cc633b;
     letter-spacing: .15em;
-    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+    text-shadow: 1px -1px 0 #d86565, -1px 2px 1px #b14a4a, -2px 4px 1px #c38152fa,  -3px 6px 1px #e2bf3e, -4px 8px 1px #cc905deb; }
 
   .menu-type {
     margin-top: -3vh !important; }
@@ -55,25 +55,25 @@
     padding: 0px;
     text-align: center;
     text-rendering: optimizeLegibility;
-    color: #3E3232;
+    color: #cc633b;
     letter-spacing: .15em;
-    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+    text-shadow: 1px -1px 0 #d86565, -1px 2px 1px #b14a4a, -2px 4px 1px #c38152fa,  -3px 6px 1px #e2bf3e, -4px 8px 1px #cc905deb; }
 
   .menu-type {
     margin-top: 4vh !important; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .menu-type {
-    margin-top: 20vh !important; } }
+    margin-top: 15vh !important; } }
 .logo {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 40px;
   padding: 10px 10px;
   text-align: center;
   text-rendering: optimizeLegibility;
-  color: #3E3232;
+  color: #cc633b;
   letter-spacing: .15em;
-  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+  text-shadow: 1px -1px 0 #d86565, -1px 2px 1px #b14a4a, -2px 4px 1px #c38152fa,  -3px 6px 1px #e2bf3e, -4px 8px 1px #cc905deb; }
 
 .logo-mobile {
   margin-top: auto;
@@ -81,7 +81,7 @@
 
 .logo-mobile a:hover, .logo:hover {
   color: #6c7ae0;
-  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #4D80E7, -3px 6px 1px #787777,  -4px 8px 1px #4E97C5, -5px 10px 1px #6D97D1,  -6px 12px 1px #686FCC, -7px 14px 1px #6c7ae0; }
+  text-shadow: 1px -1px 0 #51ACAB, -1px 2px 1px #737272, -2px 4px 1px #4D80E7, -3px 6px 1px #3BB6C5,  -4px 8px 1px #4E97C5; }
 
 .wrap-menu-desktop, .wrap-header-mobile {
   top: -8px !important;
@@ -128,5 +128,19 @@
 
 .food-item {
   padding-top: 12px; }
+
+.menu-group .how-active1 {
+  color: #fff;
+  background-color: #F58522; }
+.menu-group button {
+  color: #fff;
+  background-color: #E87E54;
+  border-color: #E87E54; }
+.menu-group button:hover {
+  transform: scale(1.1);
+  color: #fff;
+  border-color: #E4B055; }
+.menu-group .btn:focus {
+  box-shadow: 0 0 0 3px #EB6C27 !important; }
 
 /*# sourceMappingURL=customer.css.map */
