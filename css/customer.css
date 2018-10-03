@@ -9,11 +9,12 @@
 
   .food-item {
     padding-right: 8px;
-    padding-left: 8px; }
-
+    padding-left: 8px; } }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .logo-mobile a {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 3.5vh;
+    font-size: 1.5em;
     padding: 0px;
     text-align: center;
     text-rendering: optimizeLegibility;
@@ -23,6 +24,39 @@
 
   .menu-type {
     margin-top: -3vh !important; } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .logo-mobile a {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 2.5em;
+    padding: 0px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    color: #3E3232;
+    letter-spacing: .15em;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+
+  .menu-type {
+    margin-top: -3vh !important; } }
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .logo-mobile a {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 2.5em;
+    padding: 0px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    color: #3E3232;
+    letter-spacing: .15em;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,  -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585; }
+
+  .menu-type {
+    margin-top: 4vh !important; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .menu-type {
+    margin-top: 20vh !important; } }
 .logo {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 40px;
