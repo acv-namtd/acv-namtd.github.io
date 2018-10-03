@@ -21,21 +21,21 @@ $im : !important;
 	-6px 12px 1px #686FCC, -7px 14px 1px #6c7ae0;
 }
 //display cart when display lower 1000px
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
 	.food-image a{
 		position: absolute;
 		bottom  : 20px;
 		right   : 4px;
 		display : block;
 		font-size: 0.8em;
-		padding-top: 5% $im;
+		padding-top: 7px $im;
 	}
 	.food-item{
 		padding-right: 8px;
 		padding-left : 8px;
 	}
 	.logo-mobile a{
-		@include font-logo(7vw,0px);
+		@include font-logo(3.5vh,0px);
 	}
 	.menu-type{
 		margin-top: -3vh $im;
