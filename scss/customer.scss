@@ -52,10 +52,18 @@ $im : !important;
 	.menu-type{
 		margin-top: -3vh $im;
 	}
+	.logo-mobile{
+		margin: 0 $im;
+		height: 57px;
+	}
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.logo-mobile{
+		margin: 0 $im;
+		height: 50px;
+	}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -79,7 +87,8 @@ $im : !important;
 	@include font-logo(40px,10px 10px);
 }
 .logo-mobile{
-	height: 6vh;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 .logo-mobile a:hover,.logo:hover{
 	@include font-logo-hover();
