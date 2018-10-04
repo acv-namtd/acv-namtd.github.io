@@ -2,30 +2,24 @@
 $im : !important;
 //font logo
 @mixin font-logo($font_size,$font_padding){
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	font-size: $font_size;
-	padding: $font_padding;
-  	text-align: center;
-  	text-rendering: optimizeLegibility;
-	color: #cc633b;
-	letter-spacing: .15em;
-	text-shadow: 1px -1px 0 #d86565, -1px 2px 1px #b14a4a, -2px 4px 1px #c38152fa, 
-	-3px 6px 1px #e2bf3e, -4px 8px 1px #cc905deb;
-}
-@mixin font-logo-hover(){
-	color: #6c7ae0;
-	text-shadow: 1px -1px 0 #51ACAB, -1px 2px 1px #737272,
-	-2px 4px 1px #4D80E7, -3px 6px 1px #3BB6C5, 
-	-4px 8px 1px #4E97C5;
+	color      : #E11D1D; 
+	font-family: 'Lobster',cursive;
+	font-size  : $font_size; 
+	padding    : $font_padding;
+	font-weight: normal; 
+	text-align : center; 
+	text-shadow: -2px 2px 0px #EF1B1B,
+                 -3px 3px 0px #E64545,
+                 -4px 4px 0px #B31919;
 }
 //display cart when display lower 1000px
 @media screen and (max-width: 1000px){
 	.food-image a{
-		position: absolute;
-		bottom  : 20px;
-		right   : 4px;
-		display : block;
-		font-size: 0.8em;
+		position   : absolute;
+		bottom     : 20px;
+		right      : 4px;
+		display    : block;
+		font-size  : 0.8em;
 		padding-top: 7px $im;
 	}
 	.food-item{
@@ -36,6 +30,12 @@ $im : !important;
 		position: fixed;
 		right: 2%;
 		z-index: 1000;
+		i{
+			opacity: 0.8;
+		}
+	}
+	.wrap-header-mobile{
+		height: 50px;
 	}
 }
 /* Extra small devices (phones, 600px and down) */
@@ -45,6 +45,17 @@ $im : !important;
 	}
 	.menu-type{
 		margin-top: -3vh $im;
+	}
+	.logo-mobile{
+		margin-bottom: 15px;
+	}
+	//custom image of modal popup show detail food
+	.wrap-pic-w{
+		img{
+			height    : 200px;
+			min-height: 200px;
+			min-width : 100%;
+		}
 	}
 } 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -56,16 +67,24 @@ $im : !important;
 		margin-top: -3vh $im;
 	}
 	.logo-mobile{
-		margin: 0 $im;
-		height: 57px;
+		margin-bottom: 15px;
+		height       : 100%;
+	}
+	//custom image of modal popup show detail food
+	.wrap-pic-w{
+		img{
+			height    : 300px;
+			min-height: 300px;
+			min-width : 100%;
+		}
 	}
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.logo-mobile{
-		margin: 0 $im;
-		height: 50px;
+		height: 50px $im;
+		margin-bottom: 15px;
 	}
 } 
 
@@ -90,11 +109,10 @@ $im : !important;
 	@include font-logo(40px,10px 10px);
 }
 .logo-mobile{
-	margin-top: auto;
-	margin-bottom: auto;
+	height: 100%;
 }
-.logo-mobile a:hover,.logo:hover{
-	@include font-logo-hover();
+.logo:hover,.logo-mobile:hover{
+	color: #EC8888;
 }
 .wrap-menu-desktop,.wrap-header-mobile{
 	top:-8px !important;
@@ -110,41 +128,41 @@ $im : !important;
 .food-image{
 	img{
 		min-height: 170px;
-		width: 100%;
-		cursor: pointer;
+		width     : 100%;
+		cursor    : pointer;
 	}
 	a{
 		padding-top: 1%;
-		text-align: center;
-		width:  90%;
-		height: 30px;
+		text-align : center;
+		width      :  90%;
+		height     : 30px;
 	}
 	a:hover{
-		border-color: #222;
+		border-color    : #222;
 		background-color: #ddd;
-		color: black;
-		font-weight: bold;
+		color           : black;
+		font-weight     : bold;
 	}
 	i.cart-desktop{
 		padding-right: 5px;
 	}
 }
 .block2{
-	border: 1px solid #e1e1e1;
+	border       : 1px solid #e1e1e1;
 	border-radius: 5px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 4px 15px 0 rgba(0,0,0,.19);
+	box-shadow   : 0 2px 2px 0 rgba(0,0,0,.2), 0 4px 15px 0 rgba(0,0,0,.19);
 }
 .food-content{
 	div{
-		text-align: center;
+		text-align  : center;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left : auto;
 		align-items : center;
 	}
 	a{
-		width: 100%;
-		overflow: hidden;
-		white-space: nowrap;
+		width        : 100%;
+		overflow     : hidden;
+		white-space  : nowrap;
 		text-overflow: ellipsis; 
 	}
 }
@@ -157,7 +175,24 @@ $im : !important;
 	}
 	.more{
 		.dropdown-toggle{
-			cursor:pointer; 
+			cursor:pointer;
 		}
+	}
+}
+//custom payment of modal cart payment
+.modal-cart-payment{
+	.div1,.div2,.div3{
+		margin-left : auto;
+		margin-right: auto;
+	}
+	.div2 .js-addcart-detail{
+		margin-left : auto;
+		margin-right: auto;
+	}
+}
+//custom image of modal show large image
+div.mfp-content{
+	img.mfp-img{
+		height: 400px;
 	}
 }
