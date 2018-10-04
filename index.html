@@ -55,7 +55,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Menu</a>
+								<a href="index.html">Home</a>
 								<ul class="sub-menu">
 									<li><a href="index.html">Menu 1</a></li>
 									<li><a href="home-02.html">Menu 2</a></li>
@@ -118,7 +118,7 @@
 		<div class="menu-mobile">
 			<ul class="main-menu-m">
 				<li>
-					<a href="index.html">Menu</a>
+					<a href="index.html">Home</a>
 					<ul class="sub-menu-m">
 						<li><a href="index.html">Menu 1</a></li>
 						<li><a href="home-02.html">Menu 2</a></li>
@@ -238,35 +238,38 @@
 		<div class="container">
 			<div class="flex-w flex-sb-m p-b-20 menu-type">
 				<!--Menu Type-->
-				<div id="scroll-menu">
-					<div class="flex-w flex-l-m filter-tope-group m-tb-10 menu-group">
-						<button class="btn stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5 how-active1" data-filter="*">
-							All Foods
-						</button>
+				<div class="flex-w flex-l-m filter-tope-group m-tb-10 menu-group">
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5 how-active1" data-filter="*">
+						All Foods
+					</button>
 
-						<button class="btn stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".women">
-							Morning Menu
-						</button>
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".women">
+						Morning Menu
+					</button>
 
-						<button class="btn stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".men">
-							Afternoon Menu
-						</button>
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".men">
+						Afternoon Menu
+					</button>
 
-						<button class="btn stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".bag">
-							Dinner Menu
-						</button>
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".bag">
+						Dinner Menu
+					</button>
 
-						<button class="btn stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".shoes">
-							Special Menu
-						</button>
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".shoes">
+						Special Menu
+					</button>
 
-						<button class="btn stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".watches">
-							Customer Menu
-						</button>
-
-						<button class="btn menu-more">
-							More
-						</button>
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5" data-filter=".watches">
+						Customer Menu
+					</button>
+					<div class="dropdown more stext-106 cl6 hov1 bor3 trans-04 m-r-20 m-tb-5">
+						<a class="dropdown-toggle"  data-toggle="dropdown">More
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item">Type 1</a></li>
+								<li><a href="#" class="dropdown-item">Type 2</a></li>
+								<li><a href="#" class="dropdown-item">Type 3</a></li>
+							</ul>
 					</div>
 				</div>
 				<div class="flex-w flex-c-m m-tb-10">
@@ -1043,6 +1046,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+<!--===============================================================================================fixed cart for mobile-->
+	<script type="text/javascript">
+		$( window ).scroll(function() {
+			var height = $(".wrap-header-mobile" ).height()+$(".menu-type" ).height();
+			//screen mobile, if have menu, height += height menu;
+			if ($("div.menu-mobile:visible").length===1) {
+				height+= $("div.menu-mobile:visible" ).height();
+			}
+			if($(this).scrollTop()>height){
+				$(".js-show-cart").addClass("mobile-fixed-cart");
+			}else{
+				$(".js-show-cart").removeClass("mobile-fixed-cart");
+			}
+		});
+	</script>
 </body>
 </html>

@@ -11,18 +11,10 @@
     padding-right: 8px;
     padding-left: 8px; }
 
-  div.menu-group {
-    height: 50px;
-    width: 1000px;
-    margin-left: 20px; }
-
-  #scroll-menu {
-    width: 500px;
-    overflow-x: scroll;
-    overflow-y: hidden; }
-
-  .menu-more {
-    display: none; } }
+  .mobile-fixed-cart {
+    position: fixed;
+    right: 2%;
+    z-index: 1000; } }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo-mobile a {
@@ -59,10 +51,7 @@
 @media only screen and (min-width: 768px) {
   .logo-mobile {
     margin: 0 !important;
-    height: 50px; }
-
-  #scroll-menu {
-    padding-top: 10px; } }
+    height: 50px; } }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo-mobile a {
@@ -145,18 +134,9 @@
 .food-item {
   padding-top: 12px; }
 
-.menu-group .how-active1 {
-  color: #fff;
-  background-color: #F58522; }
-.menu-group button {
-  color: #fff;
-  background-color: #E87E54;
-  border-color: #E87E54; }
-.menu-group button:hover {
-  transform: scale(1.1);
-  color: #fff;
-  border-color: #E4B055; }
-.menu-group .btn:focus {
-  box-shadow: 0 0 0 3px #EB6C27 !important; }
+.menu-group a.dropdown-item:hover {
+  background-color: #D1D1D1; }
+.menu-group .more .dropdown-toggle {
+  cursor: pointer; }
 
 /*# sourceMappingURL=customer.css.map */
