@@ -37,6 +37,10 @@ $im : !important;
 	.wrap-header-mobile{
 		height: 50px;
 	}
+	//custom food detail
+	#food-detail{
+		margin-top: 50px;
+	}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -61,13 +65,13 @@ $im : !important;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.logo-mobile a{
-		@include font-logo(2.5em,0px);
+		@include font-logo(2em,0px);
 	}
 	.menu-type{
 		margin-top: -3vh $im;
 	}
 	.logo-mobile{
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 		height       : 100%;
 	}
 	//custom image of modal popup show detail food
@@ -84,7 +88,7 @@ $im : !important;
 @media only screen and (min-width: 768px) {
 	.logo-mobile{
 		height: 50px $im;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 } 
 
@@ -96,12 +100,20 @@ $im : !important;
 	.menu-type{
 		margin-top: 4vh $im;
 	}
+	//custom food detail
+	#food-detail{
+		margin-top: 90px;
+	}
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.menu-type{
 		margin-top: 15vh $im;
+	}
+	//custom food detail
+	#food-detail{
+		margin-top: 100px;
 	}
 }
 //custom logo desktop and mobile
@@ -184,6 +196,7 @@ $im : !important;
 	.div1,.div2,.div3{
 		margin-left : auto;
 		margin-right: auto;
+		text-align: center;
 	}
 	.div2 .js-addcart-detail{
 		margin-left : auto;
